@@ -12,7 +12,6 @@ $(document).ready(() => {
 
   $("#backToHome").click(function () {
     let elemento = document.getElementById("top");
-    console.log("clicked");
     let divScroll = $(elemento).offset().top;
     $("html,body").animate({ scrollTop: divScroll }, 1000);
   });
