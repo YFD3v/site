@@ -1,4 +1,4 @@
-
+import $ from "jquery";
 $(document).ready(() => {
   $("#desktop a").click(function () {
     var href = $(this).attr("href");
