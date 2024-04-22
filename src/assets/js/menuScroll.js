@@ -1,26 +1,29 @@
-import $ from "jquery";
-$(document).ready(() => {
-  $("#desktop a").click(function () {
-    var href = $(this).attr("href");
-    var offSetTop = $(href).offset().top;
 
-    $("html,body").animate({ scrollTop: offSetTop }, 1000);
+
+
+
+jQuery(document).ready(() => {
+  jQuery("#desktop a").click(function () {
+    var href = jQuery(this).attr("href");
+    var offSetTop = jQuery(href).offset().top;
+
+    jQuery("html,body").animate({ scrollTop: offSetTop }, 1000);
 
     return false;
   });
 
-  $("#backToHome").click(function () {
+  jQuery("#backToHome").click(function () {
     let elemento = document.getElementById("top");
     console.log("clicked");
-    let divScroll = $(elemento).offset().top;
-    $("html,body").animate({ scrollTop: divScroll }, 1000);
+    let divScroll = jQuery(elemento).offset().top;
+    jQuery("html,body").animate({ scrollTop: divScroll }, 1000);
   });
 
-  $("#mobile a").click(function () {
-    var href = $(this).attr("href");
-    var offSetTop = $(href).offset().top;
+  jQuery("#mobile a").click(function () {
+    var href = jQuery(this).attr("href");
+    var offSetTop = jQuery(href).offset().top;
 
-    $("html,body").animate({ scrollTop: offSetTop }, 1000);
+    jQueryquery("html,body").animate({ scrollTop: offSetTop }, 1000);
 
     return false;
   });
