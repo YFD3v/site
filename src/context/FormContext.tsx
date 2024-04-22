@@ -86,7 +86,6 @@ export function FormContextProvider({ children }: FormContextProviderProps) {
   };
 
   const handleChangeSelect = (e: SelectChangeEvent<string>) => {
-    console.log(formData);
     setFormData((prevData) => ({ ...prevData, subject: e.target.value }));
   };
 
