@@ -1,0 +1,114 @@
+@import "../../styles/sass/colors.scss";
+
+.Header,
+.Footer {
+  background-color: $secondary-background;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 96px;
+}
+
+.Logomarca {
+  display: flex;
+  align-items: center;
+  width: 40%;
+
+  .Logo {
+    max-width: 80px;
+    width: 100%;
+    margin-right: 1rem;
+  }
+
+  .Marca {
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+  @media screen and (max-width: 450px) {
+    .Logo {
+      max-width: 60px;
+      margin-right: 0.5rem;
+    }
+    .Marca {
+      font-size: 1rem;
+    }
+  }
+}
+
+.Desktop {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  ul {
+    li {
+      display: inline-block;
+      margin: 0 0.8rem;
+      cursor: pointer;
+
+      > a {
+        transition: 0.3s;
+        font-size: 1rem;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 830px) {
+    display: none;
+  }
+}
+
+.Mobile {
+  width: 60%;
+  display: none;
+  h3 {
+    cursor: pointer;
+  }
+  ul {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 96px;
+    width: 100%;
+    transition: max-height 0.3s ease-out;
+    background-color: #282729;
+    border-bottom: 1px solid #151819;
+    text-align: center;
+    li {
+      margin: 1.3rem 0;
+      font-size: 1rem;
+      > a {
+        transition: 0.3s;
+        font-size: 1rem;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 830px) {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+}
+
+.backHome {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem;
+  width: 60%;
+}
+
+.backHomeImg {
+  transform: rotate(180deg);
+  max-width: 40px;
+  cursor: pointer;
+}

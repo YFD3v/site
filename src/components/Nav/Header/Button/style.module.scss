@@ -1,0 +1,16 @@
+@import "../../../../styles/sass/colors.scss";
+
+.Button {
+  cursor: pointer;
+  border: 0;
+  background-color: $primary;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 0.4em 1em;
+  transition: 0.3s;
+  &:hover {
+    background-color: $secondary;
+  }
+}
