@@ -1,0 +1,17 @@
+.Box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.Services {
+  padding: 8rem 1rem;
+  text-align: center;
+}
+
+.Title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
