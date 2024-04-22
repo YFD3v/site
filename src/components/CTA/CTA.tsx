@@ -1,4 +1,3 @@
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import styles from "./style.module.scss";
 
 const CTA = () => {
