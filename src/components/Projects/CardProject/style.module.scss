@@ -1,0 +1,76 @@
+@import "../../../styles/sass/colors.scss";
+
+.slide {
+  width: 400px;
+  height: 478px;
+  border: 1px solid $secondary;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: clip;
+  transition: 0.4s;
+  margin-left: 10px;
+  &:hover {
+    border-color: $primary;
+  }
+  text-align: center;
+  position: relative;
+
+  @media screen and (max-width: 800px) {
+    width: 380px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 280px;
+  }
+}
+
+.slideImg {
+  max-width: 400px;
+  height: 254px;
+  object-fit: cover;
+}
+
+.slideDescription {
+  font-size: 0.8rem;
+}
+
+.slideButton {
+  background: 0;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  font-size: 1rem;
+  transform: translateX(-50%);
+  padding: 4px 10px;
+  border: 1px solid $primary;
+  transition: 0.3s;
+  &:hover {
+    background-color: $primary;
+    a {
+      color: white;
+    }
+  }
+  a {
+    color: $primary;
+  }
+}
+
+.slideTitle {
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+.slideDescription {
+  font-size: 0.9rem;
+  color: #ccc8c8;
+  padding: 8px 16px;
+}
+
+@media (max-width: 300px) {
+  .slide {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
