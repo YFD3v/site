@@ -1,0 +1,115 @@
+@import "../../styles/sass/colors.scss";
+.Cta {
+  background-image: url(/images/background-cta.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - 96px);
+}
+.Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.Content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.TextImages {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  > img {
+    margin-bottom: 1rem;
+    max-width: 90%;
+  }
+  > img:first-of-type {
+    max-width: 60%;
+    margin-bottom: 1.5rem;
+  }
+  .social {
+    margin-top: 1rem;
+    display: flex;
+    .instagram,
+    .linkedin {
+      cursor: pointer;
+      margin: 0 0.5rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+      padding: 8px;
+      max-width: 48px;
+      max-height: 48px;
+      border: 1px solid $primary;
+      border-radius: 50%;
+      img {
+        max-width: 30px;
+      }
+    }
+  }
+}
+
+.TrêsD {
+  width: 48%;
+  img {
+    max-width: 100%;
+  }
+}
+
+.ArrowDown {
+  position: absolute;
+  bottom: 2%;
+  img {
+    max-width: 50px;
+  }
+}
+
+@media screen and (max-width: 828px) {
+  .Cta {
+    height: 100vh;
+  }
+  .Content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .TextImages,
+  .TrêsD {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Cta {
+    height: calc(100vh - 96px);
+  }
+
+  .TextImages > img:first-of-type {
+    max-width: 80%;
+    margin-bottom: 1.5rem;
+  }
+  .TextImages img {
+    max-width: 100%;
+  }
+  .Content {
+    padding: 0;
+  }
+  .instagram,
+  .linkedin {
+    width: 36px;
+    height: 36px;
+  }
+}
