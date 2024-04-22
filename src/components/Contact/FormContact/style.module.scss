@@ -1,0 +1,80 @@
+@import "../../../styles/sass/colors.scss";
+
+.Container {
+  background-color: $secondary-background;
+  width: 50%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 3.5rem 2rem;
+  text-align: center;
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 80%;
+  }
+}
+
+.Form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  input {
+    width: 45%;
+    height: 60px;
+    font-size: 1rem;
+    padding: 0 8px;
+    margin-bottom: 1rem;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    outline: 0;
+    font-weight: 500;
+    background-color: $primary-background;
+  }
+
+  .Select {
+    width: 95%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    outline: 0;
+    font-weight: 500;
+    background-color: $primary-background;
+  }
+  textarea {
+    width: 95%;
+    background-color: $primary-background;
+    resize: none;
+    height: 250px;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    font-size: 1rem;
+    color: white;
+    padding: 12px;
+  }
+  button {
+    background-color: $primary;
+    color: white;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 35px;
+    border-radius: 10px;
+  }
+}

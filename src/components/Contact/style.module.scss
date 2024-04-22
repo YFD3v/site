@@ -1,0 +1,10 @@
+.Contact {
+  padding: 8rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}

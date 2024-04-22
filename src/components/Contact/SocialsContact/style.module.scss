@@ -1,0 +1,29 @@
+@import "../../../styles/sass/colors.scss";
+.Socials {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.Social {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 1.8rem 0;
+
+  div {
+    display: flex;
+    height: 55px;
+    width: 55px;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary;
+    border-radius: 50%;
+    img {
+      max-width: 30px;
+    }
+  }
+}
