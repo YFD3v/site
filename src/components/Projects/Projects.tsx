@@ -69,7 +69,14 @@ const Projects = () => {
           }}
         >
           {myRepos?.map((repo, index) => (
-            <SplideSlide key={index}>
+            <SplideSlide
+              key={index}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
               <CardProject
                 name={repo.name}
                 htmlUrl={repo.html_url}

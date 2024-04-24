@@ -8,7 +8,6 @@
   overflow: hidden;
   text-overflow: clip;
   transition: 0.4s;
-  margin-left: 10px;
   &:hover {
     border-color: $primary;
   }
@@ -32,6 +31,12 @@
 
 .slideDescription {
   font-size: 0.8rem;
+}
+
+.splideSlide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slideButton {
